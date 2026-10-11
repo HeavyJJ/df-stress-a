@@ -1,0 +1,11 @@
+{
+  "name": "df-stress-a",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Subscription proration helpers (Draft Fixer stress test A).",
+  "scripts": {
+    "test": "node --test",
+    "lint": "node scripts/lint.js"
+  }
+}
