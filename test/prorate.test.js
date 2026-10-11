@@ -4,6 +4,7 @@ import { prorate } from "../src/billing/prorate.js";
 
 test("a full calendar month costs exactly the monthly price", () => {
   assert.equal(prorate(3100, "2026-03-01", "2026-03-31"), 3100);
+  assert.equal(prorate(3100, "2026-03-10", "2026-03-10"), 100);
 });
 
 test("signing up and cancelling on the same day bills one day", () => {
