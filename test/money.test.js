@@ -5,6 +5,7 @@ import { formatCents, splitCents } from "../src/lib/money.js";
 test("formats cents as dollars", () => {
   assert.equal(formatCents(310050), "$3,100.50");
   assert.equal(formatCents(5), "$0.05");
+  assert.equal(formatCents(9), "$0.09");
   assert.equal(formatCents(-1999), "-$19.99");
 });
 
