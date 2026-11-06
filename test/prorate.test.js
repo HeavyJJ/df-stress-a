@@ -8,6 +8,7 @@ test("a full calendar month costs exactly the monthly price", () => {
 
 test("signing up and cancelling on the same day bills one day", () => {
   assert.equal(prorate(3100, "2026-03-10", "2026-03-10"), 100);
+  assert.equal(prorate(3000, "2026-04-01", "2026-04-01"), 100);
 });
 
 test("the first half of April is half the price", () => {
