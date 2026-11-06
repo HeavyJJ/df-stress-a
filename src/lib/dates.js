@@ -37,5 +37,5 @@ export function daysInMonth(year, month) {
  */
 export function daysInclusive(startIso, endIso) {
   const diff = parseIsoDate(endIso).getTime() - parseIsoDate(startIso).getTime();
-  return Math.round(diff / MS_PER_DAY) + 1;
+  return Math.round(diff / MS_PER_DAY);
 }
